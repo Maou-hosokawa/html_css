@@ -1,0 +1,97 @@
+/* スマホ用のCSSはメディアクエリの外に記述する */
+h1,h2{
+    margin: 12px;
+    text-align: center;
+}
+
+div{
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    margin: 12px auto;
+  }
+  
+  .search-here {
+    color: #fff;
+    background-color: #e2001b;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin: 10px 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    margin: 12px auto;
+  }
+  
+  .mobile {
+    display: none;
+  }
+
+  .main-visual {
+    height: 400px;
+    background: no-repeat center;
+    background-image: url('images/dog_bg_sp.jpeg');
+  }
+  
+
+@media screen and (min-width: 481px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+
+    img {
+        max-width: 680px;
+      }
+
+      .search-here {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 12px auto;
+      }
+
+      .pc {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+    
+      .main-visual {
+        height: 400px;
+        background: no-repeat center;
+        background-image: url('./images/neko_bg_pc.jpeg');
+      }
+    
+    
+}
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+
+    img {
+        max-width: 960px;
+      }
+    
+      li {
+        width: 25%;
+      }
+    
+
+    
+}

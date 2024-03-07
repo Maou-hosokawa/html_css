@@ -1,0 +1,45 @@
+h1{
+    color: white;
+}
+.h1{
+    color: blue !important; 
+}
+
+.bg{
+    background-color: #aabbcc;
+    height: 5%;
+    max-height: 100px;
+}
+.innerbg{
+    background-color: black;
+    height: 150px;
+    width: 90%;
+}
+ .bg p{
+    width: 90%;
+    background-color: #aabbcc;
+    height: 200px;
+    color: white;
+    text-align: center;
+ }
+
+ .width-bg1{
+    background-color: #aabbcc;
+    width: 50%;
+    max-width: 500px;
+    display: block;
+    margin: 100px auto 20px;
+ }
+
+ .width-bg1 p{
+    margin: 0 auto;
+ }
+
+ .width-bg2{
+    background-color: #aabbcc;
+    width: 50%;
+    min-width: 200px;
+    display: block;
+    margin: 20px auto;
+ }
+
